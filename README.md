@@ -32,7 +32,7 @@ wordpress-projects/
 │       │   └── [font files]
 │       ├── img/
 │       │   └── [image files]
-        ├── js/
+│       ├── js/
 │       │   └── main.js
 │       ├── footer.php
 │       ├── functions.php
