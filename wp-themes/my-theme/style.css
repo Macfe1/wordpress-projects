@@ -1,0 +1,233 @@
+/*
+Theme Name: My Landing Page
+Author: Mafe
+Description: Tema para landing page con navegación interna
+Version: 1.0
+*/
+
+/*Fuentes*/
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('./fonts/Arimo/Arimo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTRamillas';
+    src: url('./fonts/TT-Ramillas/TT Ramillas Trial Medium Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TTRamillas';
+    src: url('./fonts/TT-Ramillas/TT Ramillas Trial ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arimo', sans-serif;
+}
+
+main {
+    margin: 40px;
+}
+
+/*HEADER*/
+
+/* Navigation bar and logo container*/
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background-color:  rgb(153,163,164, 0.2);
+    width: 100%;
+    height: auto;
+    padding: 6px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 320px;
+    height: auto;
+}
+
+.logo img {
+    margin-left: 20px;
+    max-width: 25%;
+    height:auto;
+}
+/*number next to the logo*/
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/*menu*/
+.mi-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-right: 200px;
+}
+
+.mi-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*MAIN*/
+section.container-home {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+/*texto Antojo de ultima hora*/
+.container-home-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: auto;
+    /*background-color: rgb(40, 228, 149);*/
+}
+
+#texto-uno {
+    font-family: 'TTRamillas', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.0;
+    margin: 0;
+}
+
+#texto-dos {
+    font-family: 'TTRamillas', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    color: #aeda65;
+    text-decoration: none;
+    margin: 0;
+}
+
+#texto-dos:hover {
+    color: #000000;
+    background-color: #aeda65;
+    border-radius: 20px;
+}
+
+.container-home-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1200px;
+    height: auto;
+    /*background-color: rgb(71, 71, 11);*/
+}
+
+/*HAMBURGUESAS*/
+.container-home-hamburguesas {
+    display: flex;
+    flex-direction:column;
+    width: 350px;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-home-hamburguesas ul {
+    display: flex;
+    list-style: none;
+    gap: 200px;
+    padding: 0;
+    align-items: center;
+    margin: 20px;
+}
+
+.container-home-hamburguesas li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 350px;
+    text-align: center;
+}
+
+.container-home-hamburguesas img {
+    max-width: 100%;
+    height:60%;
+}
+
+.container-home-hamburguesas p {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: 17px;
+    margin: 10px;
+}
+
+/*BAKERY*/
+.container-home-bakery {
+    display: flex;
+    flex-direction:column;
+    width: 350px;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-home-bakery ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    padding: 0;
+    align-items: center;
+    margin: 20px;
+}
+
+.container-home-bakery li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 350px;
+    text-align: center;
+}
+
+.container-home-bakery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.container-home-bakery p {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+/*FOOTER*/

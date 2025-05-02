@@ -1,0 +1,7 @@
+# Ignore the following files
+.env
+.docker/
+*.log
+docker-compose.override.yml
+
+
