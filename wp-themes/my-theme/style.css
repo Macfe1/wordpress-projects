@@ -1,6 +1,6 @@
 /*
-Theme Name: My Landing Page
-Author: Mafe
+Theme Name: My_Landing_Page
+Author: Maria Fernanda Peña Pulgarin
 Description: Tema para landing page con navegación interna
 Version: 1.0
 */
@@ -15,14 +15,14 @@ Version: 1.0
 }
 
 @font-face {
-    font-family: 'TTRamillas';
+    font-family: 'TTRamillasItalic';
     src: url('./fonts/TT-Ramillas/TT Ramillas Trial Medium Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'TTRamillas';
+    font-family: 'TTRamillasBold';
     src: url('./fonts/TT-Ramillas/TT Ramillas Trial ExtraBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -38,10 +38,12 @@ body {
     background-color: black;
     color: white;
     font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
 main {
-    margin: 40px;
+    margin: 10px 50px;
 }
 
 /*HEADER*/
@@ -54,6 +56,7 @@ main {
     position: sticky;
     margin-bottom: 30px;
     font-size: 20px;
+    font-family: 'Arimo', sans-serif;
     background-color:  rgb(153,163,164, 0.2);
     width: 100%;
     height: auto;
@@ -111,8 +114,7 @@ section.container-home {
 }
 
 #texto-uno {
-    font-family: 'TTRamillas', sans-serif;
-    font-weight: bold;
+    font-family: 'TTRamillasBold', sans-serif;
     font-size: 60px;
     text-align: center;
     line-height: 1.0;
@@ -120,8 +122,7 @@ section.container-home {
 }
 
 #texto-dos {
-    font-family: 'TTRamillas', sans-serif;
-    font-style: italic;
+    font-family: 'TTRamillasItalic', sans-serif;
     font-size: 50px;
     text-align: center;
     color: #aeda65;
@@ -175,8 +176,8 @@ section.container-home {
 }
 
 .container-home-hamburguesas img {
-    max-width: 100%;
-    height:60%;
+    max-width: 80%;
+    height:40%;
 }
 
 .container-home-hamburguesas p {
@@ -210,16 +211,15 @@ section.container-home {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 350px;
+    height: 150px;
     text-align: center;
 }
 
 .container-home-bakery img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 20px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 .container-home-bakery p {
@@ -227,6 +227,302 @@ section.container-home {
     height: 100px;
     text-align: center;
     font-size: 17px;
+}
+/*DELIVERY*/
+
+.container-delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.text-delivery {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-delivery h1 {
+    font-size: 60px;
+}
+
+.green-text {
+    font-family: 'TTRamillasItalic', sans-serif;
+    color: #aeda65;
+    text-shadow:
+    3px 2.5px 0 #2e3d11,
+    1px -1px 0 #5a6e2e;
+}
+
+.white-text {
+    font-family: 'TTRamillasBold', sans-serif;
+    color: #ffffff;
+    text-shadow:
+        3px 2.5px 0 #3a4d14,
+        1px -1px 0 #5a6e2e;
+}
+
+.delivery-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img-delivery-info {
+    margin-right: -15px;
+}
+
+.img-delivery-info img {
+    width: 90px;
+    height: auto;
+}
+
+.text-delivery-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.text-delivery-info p,
+.text-delivery-info a {
+    font-size: 40px;
+    font-family: 'TTRamillasItalic', sans-serif;
+}
+
+.green-number {
+    text-decoration: none;
+    color: #aeda65;
+}
+
+.white-delivery-info {
+    color: #ffffff;
+}
+
+/*LOCATION*/
+
+.container-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.location-map, .location-info {
+    width: 100%;
+    height: 100%;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-info p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.location-info h2 {
+    font-family: 'TTRamillasBold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #aeda65;
+    margin-bottom: 40px;
+}
+
+/*MAP*/
+.location-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    display: block;
+}
+
+/*FORM CONTAINER*/
+
+.container-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.container-contact-us h2 {
+    margin: 20px 0;
+    font-family: 'TTRamillasBold', sans-serif;
+    font-size: 40px;
+}
+
+.container-contact-us p {
+    margin: 0 70px;
+    margin-bottom: 30px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 25px;
+}
+
+/*Background img of the Form*/
+
+.form-background {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+.form-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+/*FORM*/
+
+form {
+    width: 100%;
+    max-width: 620px;
+    margin: 20px auto;
+    padding: 34px 30px;
+    border-radius: 20px;
+    border: solid #aeda65;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Arimo', sans-serif;
+    z-index: 2;
+    position: relative;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container-form-group-one {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+/*The Label and input groups into the .container-form-group-one*/
+.container-form-group-one .form-group {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 0;
+}
+
+.form-group, 
+.bloque-form-producto {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 4px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Form Button To Add a Product*/
+.btn {
+    border: none;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Arimo', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.btn-add {
+    background-color: #000000;
+    color: #aeda65;
+    margin: 6px 0;
+}
+
+.btn-add:hover {
+    background-color: #aeda65;
+    color: #000000;
+    transform: scale(1.03);
+}
+
+/*Form Button To Submit the Form*/
+.btn-submit {
+    background-color: #aeda65;
+    color: #2e3d11;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 14px;
+}
+
+.btn-submit:hover {
+    background-color: #000000;
+    color: #aeda65;
+    transform: scale(1.03);
+    font-weight: 600;
+}
+
+.btn-submit:active {
+    background-color: #63882b8f;
+    color: #ffffff;
+    transform: scale(1.10);
+}
+
+.btn-remove {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.btn-remove:hover {
+    background-color: #ff5252;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Style for the dupplicate container */
+
+.bloque-form-producto {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 600px) {
+    .container-form-group-one {
+        flex-direction: column;
+    }
 }
 
 
