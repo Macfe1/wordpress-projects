@@ -9,12 +9,20 @@
     <?php get_header(); ?>
     <main>
         <section class="container-home">
-            <div class="container-home-texto">
-                <p id="texto-uno">¿Antojo de <br> última hora?</p>
-                <a href="https://wa.me/c/573102338458" id="texto-dos" target="_blank" aria-label="Haz tu pedido por WhatsApp">
-                    !Ordena ya!
-                </a>
+            <div class="container-background-hamburguer">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/hamburguesa_inicial_3.png" alt="Hamburguesa en el aire">
+                <div class="container-home-texto">
+                    <p id="texto-uno">¿Antojo de <br> última hora?</p>
+                    <a href="https://wa.me/c/573102338458" id="texto-dos" target="_blank" aria-label="Haz tu pedido por WhatsApp">
+                        !Ordena ya!
+                    </a>
+                </div>
             </div>
+            <div>
+                
+            </div>
+        </section>
+        <!--<section class="container-products">
             <div class="container-home-products">
                 <article class="container-home-hamburguesas">
                     <h3>Hamburguesas</h3>
@@ -53,7 +61,7 @@
                     </ul>
                 </article>
             </div>
-        </section>
+        </section>-->
         <section class="container-delivery">
             <div class="text-delivery">
                 <h1>
