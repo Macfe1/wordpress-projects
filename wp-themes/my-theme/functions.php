@@ -24,11 +24,17 @@ function mi_tema_scripts() {
         'main-js', 
         get_template_directory_uri() . '/js/main.js', 
         array(), 
-        '1.0', 
-        true // Esto hace que se cargue al final del body
+        '1.1', 
+        true // To load at the end of the body
     );
 }
 add_action('wp_enqueue_scripts', 'mi_tema_scripts');
 
+function my_enqueue_mapbox_assets() {
+    wp_enqueue_style('mapbox-gl-css', 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css');
+    wp_enqueue_script('mapbox-gl-js', 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js', array(), null, true);
+    wp_enqueue_script('mapbox-init', get_template_directory_uri() . '/js/mapbox-init.js', array('mapbox-gl-js'), null, true);
+}
+add_action('wp_enqueue_scripts', 'my_enqueue_mapbox_assets');
 
 ?>

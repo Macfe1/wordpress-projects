@@ -1,7 +1,29 @@
-
-//To manage the button to create another product
-
+console.log('¿Estoy cargando?'); 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('=== DIAGNÓSTICO DE ELEMENTOS2 ===');
+    //To manage the menu in mobile mode
+    let BtonMenuMobile = document.querySelector('.menu-toggle');
+    let ContenedorMenu = document.querySelector('.menu-landing-page-menu-container'); 
+
+    console.log(BtonMenuMobile);
+
+    if (BtonMenuMobile) {
+        BtonMenuMobile.addEventListener('click', () => {
+            console.log('Hiciste clic en el botón');
+            
+            ContenedorMenu.classList.toggle('active');
+            if (ContenedorMenu.classList.contains('active')) {
+                BtonMenuMobile.setAttribute('aria-label', 'Cerrar menú');
+                BtonMenuMobile.setAttribute('aria-expanded', 'true');
+            } else {
+                BtonMenuMobile.setAttribute('aria-label', 'Abrir menú');
+                BtonMenuMobile.setAttribute('aria-expanded', 'false');
+            }
+        })
+    }
+
+    //To manage the button to create another product
+
     const BtonToAddBlock = document.getElementById('add-product');
     const ContainerToDupplicate = document.getElementById('productos-container');
     let productCounter = 1;

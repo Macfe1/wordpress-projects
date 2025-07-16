@@ -21,6 +21,9 @@
                 'menu_class' => 'mi-menu'
             ));
             ?>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </div>
 </header>
