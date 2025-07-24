@@ -11,9 +11,6 @@
                 </a>
             </div>
         </div>
-        <div>
-            <!--space to add more products--> 
-        </div>
     </section>
     <section class="container-delivery" id="delivery">
         <div class="text-delivery">

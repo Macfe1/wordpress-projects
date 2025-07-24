@@ -11,7 +11,7 @@ const map = new mapboxgl.Map({
 });
 
 map.on('load', () => {
-    // Edificios 3D
+    //  3D Buildings
     map.addLayer({
         id: '3d-buildings',
         source: 'composite',

@@ -1,11 +1,7 @@
-console.log('¿Estoy cargando?'); 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('=== DIAGNÓSTICO DE ELEMENTOS2 ===');
     //To manage the menu in mobile mode
     let BtonMenuMobile = document.querySelector('.menu-toggle');
     let ContenedorMenu = document.querySelector('.menu-landing-page-menu-container'); 
-
-    console.log(BtonMenuMobile);
 
     if (BtonMenuMobile) {
         BtonMenuMobile.addEventListener('click', () => {
