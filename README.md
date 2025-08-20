@@ -23,6 +23,8 @@ This theme is part of the wordpress-projects repository and was built to be ligh
 
 🎥 Watch the demo video: https://youtu.be/uRWdT_-Zulk
 
+![Wordpress Theme Preview](images/wordpress-theme.png)
+
 
 ## 🧰 Project Structure
 
