@@ -18,6 +18,12 @@ This theme is part of the wordpress-projects repository and was built to be ligh
 
 - 🌐 Ideal for landing pages, service promotions, or product showcases
 
+
+## How it looks: 
+
+🎥 Watch the demo video: https://youtu.be/uRWdT_-Zulk
+
+
 ## 🧰 Project Structure
 
 ```bash
