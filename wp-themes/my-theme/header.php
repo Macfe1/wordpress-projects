@@ -11,7 +11,7 @@
     <div class="nav-container">
         <div class="logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/gus_logo.png" alt="Logo">
-            <a href="https://wa.me/c/573102338458" target="_blank">+57 3044615122</a>
+            <a href="https://wa.me/c/573102338458" target="_blank">GUS BITES</a>
         </div>
         <div class="contenedor-menu">
             <?php
