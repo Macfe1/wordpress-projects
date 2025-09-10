@@ -19,7 +19,6 @@
                 <span class="white-text">tu torre</span>
                 <!--<br><span class="white-text">Realiza tu pedido al</span>-->
             </h1>
-
         </div>
         <div class="delivery-info">
             <p class="white-delivery-info">Realiza tu pedido al</p>

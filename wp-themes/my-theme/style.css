@@ -325,7 +325,7 @@ section.container-home {
 #texto-uno {
     width: 100%;
     font-family: 'TTRamillasBold', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     line-height: 1.0;
     margin: 0;
@@ -335,7 +335,7 @@ section.container-home {
     width: 100%;
     display: block;
     font-family: 'TTRamillasItalic', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #94c93f;
     text-decoration: none;
@@ -447,7 +447,7 @@ section.container-home {
 }
 
 .text-delivery h1 {
-    font-size: 50px;
+    font-size: 2.4rem;
 }
 
 .green-text {
@@ -466,7 +466,7 @@ section.container-home {
     display: flex;
     flex-direction: column;
     align-items: start;
-    font-size: 30px;
+    font-size: 1.7rem;
     text-align: center;
 }
 
