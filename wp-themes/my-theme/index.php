@@ -15,9 +15,11 @@
     <section class="container-delivery" id="delivery">
         <div class="text-delivery">
             <h1>
-                <span class="green-text">Directo a </span>
+                <span class="white-text">Directo a </span>
                 <span class="white-text">tu torre</span>
+                <!--<br><span class="white-text">Realiza tu pedido al</span>-->
             </h1>
+
         </div>
         <div class="delivery-info">
             <p class="white-delivery-info">Realiza tu pedido al</p>
@@ -86,15 +88,15 @@
         </div>
     </section>-->
     <section class="container-location" id="location">
-        <div class="location-map">
-            <div id="map">
-                <!--mapbox js, css, and mapbox-init.js file-->
-            </div>
-        </div>
         <div class="location-info">
             <h2>Ubicación</h2>
             <p>Consulta nuestra ubicación en Google Maps.</p>
             <p>📍 Reserva del Lago, Cajicá</p>
+        </div>
+        <div class="location-map">
+            <div id="map">
+                <!--mapbox js, css, and mapbox-init.js file-->
+            </div>
         </div>
     </section>
     <section class="container-contact-us" id="contact_us">

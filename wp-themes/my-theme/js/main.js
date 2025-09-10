@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     //To manage the menu in mobile mode
-    let BtonMenuMobile = document.querySelector('.menu-toggle');
+    const BtonMenuMobile = document.querySelector('.menu-toggle');
     let ContenedorMenu = document.querySelector('.menu-landing-page-menu-container'); 
 
     if (BtonMenuMobile) {
