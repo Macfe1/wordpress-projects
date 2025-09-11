@@ -184,15 +184,33 @@ main {
     }
 
     .menu-toggle {
+        width: 45px;
+        height: 45px;
         display: flex;
-        position: relative;
-        margin-left: auto;
-        margin-right: 10px;
-        z-index: 3;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 4;
     }
 
     .menu-toggle span {
         display: block;
+        transition: transform .25s ease, opacity .2s ease;
+    }
+
+    .menu-toggle.is-open span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .mi-menu {
@@ -207,12 +225,13 @@ main {
         gap: 0;
         position: fixed;
         top: 0;
-        right: -100px;
+        right: 0;
+        transform: translateX(110%);
+        visibility: hidden;
         width: 200px;
         height: 100vh;
         padding: 40px 5px;
-        visibility: hidden;
-        background-color: rgb(90, 90, 90);
+        background-color: rgba(6, 6, 6, 0.925);
         transition: transform 0.4s ease;
         z-index: 3;
     }
@@ -236,7 +255,9 @@ main {
     .menu-landing-page-menu-container.active ul {
         opacity: 1;
         visibility: visible;
-        right: -200px;
+        width: 260px;
+        height: auto;
+        max-height: calc(100vh - 24px);
     }
 }
 
@@ -269,7 +290,6 @@ main {
     .menu-landing-page-menu-container.active ul {
         opacity: 1;
         visibility: visible;
-        right: -200px;
     }
 }
 

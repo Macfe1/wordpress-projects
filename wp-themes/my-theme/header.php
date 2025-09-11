@@ -18,10 +18,12 @@
             wp_nav_menu(array(
                 'theme_location' => 'menu-principal',
                 'container' => 'div',
+                'container_class' => 'menu-landing-page-menu-container',
+                'container_id'   => 'menu-lateral',
                 'menu_class' => 'mi-menu'
             ));
             ?>
-            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-lateral">
                 <span></span><span></span><span></span>
             </button>
         </div>

@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Hiciste clic en el botón');
             
             ContenedorMenu.classList.toggle('active');
+            BtonMenuMobile.classList.toggle('is-open');
+
             if (ContenedorMenu.classList.contains('active')) {
                 BtonMenuMobile.setAttribute('aria-label', 'Cerrar menú');
                 BtonMenuMobile.setAttribute('aria-expanded', 'true');
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 BtonMenuMobile.setAttribute('aria-label', 'Abrir menú');
                 BtonMenuMobile.setAttribute('aria-expanded', 'false');
             }
-        })
+        });
     }
 
     //To manage the button to create another product
