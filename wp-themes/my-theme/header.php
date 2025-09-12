@@ -14,6 +14,9 @@
             <a href="https://wa.me/c/573102338458" target="_blank">GUS BITES</a>
         </div>
         <div class="contenedor-menu">
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-lateral">
+                <span></span><span></span><span></span>
+            </button>
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'menu-principal',
@@ -23,9 +26,6 @@
                 'menu_class' => 'mi-menu'
             ));
             ?>
-            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-lateral">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </div>
 </header>
