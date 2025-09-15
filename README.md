@@ -21,7 +21,7 @@ This theme is part of the wordpress-projects repository and was built to be ligh
 
 ## How it looks: 
 
-🎥 Watch the demo video: [Link](https://youtu.be/uRWdT_-Zulk)
+🎥 Watch the demo video: [Link](https://youtu.be/u-eQZEjgdAs?si=By8tZ8hfInch77C-)
 
 ![Wordpress Theme Preview](images/wordpress-theme.png)
 
