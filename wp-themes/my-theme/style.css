@@ -454,21 +454,17 @@ section.container-home {
 /*>>>>>>>>>> SCREEN 1024PX <<<<<<<<<<*/
 @media (max-width: 1024px) {
 
-    .container-background-hamburguer {
-        height: 40vh;
-    }
-
     .container-home-texto {
         align-items: start;
     }
 
     #texto-uno {
-        font-size: 3.5rem;
+        font-size: 8vw;
         text-align: center;
     }
 
     #texto-dos {
-        font-size: 2rem;
+        font-size: 5vw;
         text-align: center;
         color: #94c93f;
         text-decoration: none;
@@ -479,7 +475,7 @@ section.container-home {
         color: #000000;
         background-color: #94c93f;
         border-radius: 18px;
-        width: 23vw;
+        width: 80%;
     }
 }
 
@@ -487,7 +483,7 @@ section.container-home {
 @media (max-width: 768px) {
 
     .container-background-hamburguer {
-        height: 20vh;
+        flex-direction: row-reverse;
     }
 
     .container-background-hamburguer img {
@@ -502,12 +498,12 @@ section.container-home {
     }
 
     #texto-uno {
-        font-size: 2.5vh;
+        font-size: 8vw;
         text-align: center;
     }
 
     #texto-dos {
-        font-size: 1.5vh;
+        font-size: 5vw;
         text-align: center;
         color: #94c93f;
         text-decoration: none;
@@ -518,7 +514,23 @@ section.container-home {
         color: #000000;
         background-color: #94c93f;
         border-radius: 18px;
-        width: 66%;
+        width: 80%;
+    }
+}
+
+/*>>>>>>>>>> SCREEN 400PX <<<<<<<<<<*/
+@media (max-width: 400px) {
+
+    #texto-uno {
+        font-size: 11vw;
+    }
+
+    #texto-dos {
+        font-size: 8vw;
+    }
+
+    #texto-dos:hover {
+        width: 80%;
     }
 }
 
